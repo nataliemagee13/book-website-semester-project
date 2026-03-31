@@ -1,0 +1,103 @@
+:root {
+	--peach: #ffd8c2;
+	--light-peach: #fff1e8;
+	--light-blue: #d9ecff;
+	--blue-accent: #8bbce6;
+	--text: #2e3a46;
+	--white: #ffffff;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	color: var(--text);
+	background-color: var(--light-peach);
+	line-height: 1.6;
+}
+
+.navbar {
+	background-color: var(--peach);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 2rem;
+	border-bottom: 2px solid var(--blue-accent);
+}
+
+.site-name {
+	font-size: 1.5rem;
+}
+
+.nav-links {
+	list-style: none;
+	display: flex;
+	gap: 1rem;
+}
+
+.nav-links a {
+	text-decoration: none;
+	color: var(--text);
+	font-weight: bold;
+}
+
+main {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 1.5rem;
+}
+
+.hero,
+.books-section,
+.about {
+	background-color: var(--white);
+	border: 2px solid var(--light-blue);
+	border-radius: 10px;
+	padding: 1.2rem;
+	margin-bottom: 1.2rem;
+}
+
+.hero h2,
+.books-section h3,
+.about h3 {
+	margin-bottom: 0.5rem;
+}
+
+.book-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	gap: 1rem;
+	margin-top: 0.8rem;
+}
+
+.book-card {
+	background-color: var(--light-blue);
+	border-radius: 8px;
+	padding: 0.9rem;
+}
+
+.book-card h4 {
+	margin-bottom: 0.3rem;
+}
+
+.author {
+	font-weight: bold;
+	margin-bottom: 0.4rem;
+}
+
+@media (max-width: 700px) {
+	.navbar {
+		flex-direction: column;
+		gap: 0.7rem;
+	}
+
+	.nav-links {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+
