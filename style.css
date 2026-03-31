@@ -1,0 +1,124 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background-color: #f9f5f0;
+    color: #333;
+    line-height: 1.7;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #4a3728;
+    color: #fff;
+    padding: 20px 40px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #f0d9c0;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+    padding: 4px 0;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.2s;
+}
+
+nav a:hover {
+    border-bottom-color: #f0d9c0;
+}
+
+/* Main Content */
+main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    color: #4a3728;
+    margin-bottom: 16px;
+    border-bottom: 2px solid #c8a882;
+    padding-bottom: 8px;
+}
+
+/* Hero Section */
+.hero p {
+    font-size: 1.1rem;
+    max-width: 700px;
+}
+
+/* Book Cards */
+.book-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+    margin-top: 20px;
+}
+
+.book-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.book-card h3 {
+    font-size: 1.2rem;
+    color: #4a3728;
+    margin-bottom: 6px;
+}
+
+.book-card .author {
+    font-style: italic;
+    color: #777;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.book-card p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* About Section */
+#about p {
+    margin-bottom: 12px;
+    font-size: 1.05rem;
+}
+
+/* Footer */
+footer {
+    background-color: #4a3728;
+    color: #c8a882;
+    text-align: center;
+    padding: 16px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+}
