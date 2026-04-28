@@ -127,6 +127,10 @@ main {
 	padding: 2rem 1.5rem;
 }
 
+main.book-page {
+	max-width: 760px;
+}
+
 .hero,
 .books-section,
 .trends,
@@ -171,140 +175,5 @@ main {
 	color: var(--text);
 }
 
-.content-block {
-	margin-bottom: 1.5rem;
-	padding-bottom: 1.5rem;
-	border-bottom: 1px solid var(--light-blue);
-}
-
-.content-block:last-child {
-	margin-bottom: 0;
-	padding-bottom: 0;
-	border-bottom: none;
-}
-
-.content-block p {
-	line-height: 1.8;
-	color: var(--text);
-}
-
-.works-list {
-	list-style-position: inside;
-	display: grid;
-	gap: 1rem;
-	padding-left: 0;
-}
-
-.works-list li {
-	background-color: var(--light-blue);
-	border: 1px solid rgba(139, 188, 230, 0.35);
-	border-radius: 10px;
-	padding: 1rem;
-	line-height: 1.7;
-}
-
-.works-list a {
-	display: inline-block;
-	margin-top: 0.35rem;
-	word-break: break-word;
-	color: var(--text);
-	font-weight: 600;
-}
-
-.works-list a:hover {
-	color: var(--blue-accent);
-}
-
-.book-grid {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-	gap: 1.5rem;
-	margin-top: 1.5rem;
-}
-
-.book-card {
-	background-color: var(--light-blue);
-	border-radius: 12px;
-	padding: 1.5rem;
-	box-shadow: 0 4px 6px rgba(139, 188, 230, 0.2);
-	transition: all 0.3s ease;
-	border: 1px solid rgba(139, 188, 230, 0.3);
-}
-
-.book-card:hover {
-	transform: translateY(-4px);
-	box-shadow: 0 8px 12px rgba(139, 188, 230, 0.3);
-}
-
-.book-card h4 {
-	margin-bottom: 0.6rem;
-	font-size: 1.2rem;
-	color: var(--blue-accent);
-}
-
-.author {
-	font-weight: bold;
-	margin-bottom: 0.8rem;
-	font-size: 0.95rem;
-	color: var(--text);
-}
-
-.book-card p:last-child {
-	line-height: 1.5;
-	color: var(--text);
-}
-
-@media (max-width: 700px) {
-	.navbar {
-		flex-direction: column;
-		gap: 1rem;
-		padding: 1rem;
-	}
-
-	.brand {
-		justify-content: center;
-	}
-
-	.site-name {
-		font-size: 1.5rem;
-	}
-
-	.site-tagline {
-		text-align: center;
-	}
-
-	.nav-links {
-		flex-wrap: wrap;
-		justify-content: center;
-		gap: 1.5rem;
-	}
-
-	main {
-		padding: 1rem;
-	}
-
-	.hero,
-	.books-section,
-	.trends,
-	.about,
-	.content-section {
-		padding: 1.5rem;
-		margin-bottom: 1.5rem;
-	}
-
-	.hero h2,
-	.books-section h2,
-	.books-section h3,
-	.trends h3,
-	.about h2,
-	.about h3,
-	.content-section h2 {
-		font-size: 1.4rem;
-	}
-
-	.book-grid {
-		grid-template-columns: 1fr;
-		gap: 1rem;
-	}
-}
-
+.books-section > p {
+	margin-bott
