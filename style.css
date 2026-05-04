@@ -478,10 +478,15 @@ main.book-page {
 .author-detail-card img {
 	display: block;
 	width: 100%;
-	height: 200px;
+	height: 220px;
 	object-fit: cover;
 	border-radius: 10px;
 	margin-bottom: 0.25rem;
+}
+
+/* Focus face for specific author images */
+.face-focus {
+	object-position: center 32%;
 }
 
 .author-detail-card h4 {
@@ -525,22 +530,32 @@ main.book-page {
 }
 
 .source-link {
-	display: inline-block;
-	padding: 0.4rem 0.8rem;
-	background-color: rgba(217, 236, 255, 0.5);
-	border: 1px solid rgba(139, 188, 230, 0.4);
-	border-radius: 20px;
-	font-size: 0.85rem;
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	padding: 0.55rem 1rem;
+	background-color: #f3fbff;
+	border: 1px solid rgba(139, 188, 230, 0.45);
+	border-radius: 999px;
+	font-size: 0.95rem;
 	color: var(--blue-accent);
 	text-decoration: none;
-	font-weight: 600;
-	transition: all 0.2s ease;
+	font-weight: 700;
+	transition: transform 0.12s ease, box-shadow 0.12s ease;
+	box-shadow: 0 2px 6px rgba(139, 188, 230, 0.06);
 }
 
 .source-link:hover {
-	background-color: rgba(139, 188, 230, 0.15);
-	border-color: rgba(139, 188, 230, 0.6);
+	transform: translateY(-3px);
+	box-shadow: 0 6px 18px rgba(139, 188, 230, 0.12);
+	background-color: #eaf7ff;
+	border-color: rgba(139, 188, 230, 0.7);
 	text-decoration: none;
+}
+
+.sources-bottom {
+	margin-top: 1.5rem;
+	justify-content: flex-start;
 }
 
 .research-block {
