@@ -1,88 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trend Dashboard | Peachy Pages</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header>
-    <nav class="navbar">
-      <a class="brand" href="index.html" aria-label="Peachy Pages home">
-        <span class="brand-mark" aria-hidden="true"></span>
-        <span class="brand-text">
-          <span class="site-name">Peachy Pages</span>
-          <span class="site-tagline">Reading Trends & Social Media</span>
-        </span>
-      </a>
-      <button class="hamburger" aria-label="Toggle menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="dashboard.html">Dashboard</a></li>
-      <li><a href="women-authors.html">Women Authors</a></li>
-      <li><a href="viral-types.html">Viral Types</a></li>
-      <li><a href="booktok-formula.html">BookTok Formula</a></li>
-      <li><a href="popularity-paths.html">Popularity Paths</a></li>
-      <li><a href="recommendations.html">My Recommendations</a></li>
-      <li><a href="research.html">Research &amp; Findings</a></li>
-        <li><a href="works.html">Works Cited</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main>
-    <section class="dashboard-feature">
-  <div class="booktok-card">
-    <h2>BookTok Interest</h2>
+	<header>
+		<nav class="navbar">
+			<a class="brand" href="index.html" aria-label="Peachy Pages home">
+				<span class="brand-mark" aria-hidden="true"></span>
+				<span class="brand-text">
+					<span class="site-name">Peachy Pages</span>
+					<span class="site-tagline">Reading Trends & Social Media</span>
+				</span>
+			</a>
+			<button class="hamburger" aria-label="Toggle menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+			<ul class="nav-links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="dashboard.html">Dashboard</a></li>
+				<li><a href="trends.html">Trends</a></li>
+				<li><a href="women-authors.html">Women Authors</a></li>
+				<li><a href="viral-types.html">Viral Types</a></li>
+				<li><a href="booktok-formula.html">BookTok Formula</a></li>
+				<li><a href="popularity-paths.html">Popularity Paths</a></li>
+				<li><a href="recommendations.html">My Recommendations</a></li>
+				<li><a href="research.html">Research &amp; Findings</a></li>
+				<li><a href="works.html">Works Cited</a></li>
+			</ul>
+		</nav>
+	</header>
 
-    <img 
-      src="BookTokSearchImage.png" 
-      alt="Google Trends graph showing BookTok search interest from 2021 to 2026"
-      class="booktok-graph"
-    >
+  <main class="container">
 
-    <h3>BookTok Search Interest (2021–2026)</h3>
+    <section class="hero-card">
+      <h1>Trend Dashboard</h1>
+      <p>A visual workspace for Google Trends screenshots and quick analysis.</p>
+    </section>
 
-    <p>
-      The first trend I looked at was search interest for BookTok from 2021 to 2026.
-      This data showed that BookTok has grown a lot over time instead of disappearing
-      as a short trend. This helps support my research question because it shows that
-      social media has become a bigger part of how people discover and talk about books.
-    </p>
+    <section class="booktok-card">
+      <h2>1. BookTok Interest</h2>
 
-    <a href="trends.html" class="text-link">Read deeper on BookTok trends →</a>
+      <img src="BookTokSearchImage.png" alt="Google Trends graph showing BookTok search interest from 2021 to 2026" class="booktok-graph">
+
+      <h3>BookTok Search Interest (2021–2026)</h3>
+
+      <p>
+        The first trend I looked at was search interest for BookTok from 2021 to 2026.
+        This data showed that BookTok has grown a lot over time instead of disappearing
+        as a short trend. This helps support my research question because it shows that
+        social media has become a bigger part of how people discover and talk about books.
+      </p>
+
+      <a href="trends.html" class="text-link">Read deeper on BookTok trends →</a>
+    </section>
+
+    <section class="dashboard-section">
+      <h2>2. Genres</h2>
+      <p>
+        Genres that are easier to trend online. Looking at genre search trends helped me see that BookTok is not
+        only making individual books popular. It is also making certain kinds of books more visible. Romance,
+        romantasy, fantasy, thrillers, and self-help books all show strong search interest over time.
+      </p>
+
+      <p class="source-pill">Source: Google Trends data collected for this project</p>
+
+      <div class="graph-grid">
+        <div class="graph-card">
+          <img src="RomantacyBooks.png" alt="Google Trends graph for romantasy books">
+          <h3>Romantasy</h3>
+          <p>Romantasy stayed low for years and then started rising quickly around 2023 and 2024.</p>
+        </div>
+
+        <div class="graph-card">
+          <img src="RomanceBooks.png" alt="Google Trends graph for romance books">
+          <h3>Romance Books</h3>
+          <p>Romance books grow a lot after 2021 and reach some of their highest points in 2025 and 2026.</p>
+        </div>
+
+        <div class="graph-card">
+          <img src="FantasyBooks.png" alt="Google Trends graph for fantasy books">
+          <h3>Fantasy Books</h3>
+          <p>Fantasy books show steady interest with bigger spikes around 2024 and 2025.</p>
+        </div>
+
+        <div class="graph-card">
+          <img src="ThrillerBooks.png" alt="Google Trends graph for thriller books">
+          <h3>Thriller Books</h3>
+          <p>Thrillers work well online because readers like sharing reactions to plot twists and fast-paced stories.</p>
+        </div>
+
+        <div class="graph-card">
+          <img src="SelfHelpBooks.png" alt="Google Trends graph for self-help books">
+          <h3>Self-Help Books</h3>
+          <p>Self-help books rise toward 2025 and 2026 because advice can be turned into quotes and short videos.</p>
+        </div>
+      </div>
+
+      <div class="callout-card">
+        <h3>Genre takeaway</h3>
+        <p>
+          BookTok is not only pushing specific titles. It is also helping certain genres become more visible.
+          Romantasy is the clearest example because the term rises quickly as fantasy romance books become more popular online.
+        </p>
+      </div>
+    </section>
+
+    <section class="dashboard-section">
+      <h2>3. Book Titles</h2>
+      <p>
+        Comparing specific book titles helped me see that BookTok does not create only one type of popularity.
+        Some books have long-term visibility, some spike around a release, and others blow up later because readers keep recommending them.
+      </p>
+
+      <p class="source-pill">Source: Google Trends data collected for this project</p>
+
+      <div class="badge-row">
+        <span class="badge">Long-term visibility</span>
+        <span class="badge">Release hype</span>
+        <span class="badge">Late spike</span>
+        <span class="badge">Short intense spike</span>
+        <span class="badge">Series trend</span>
+      </div>
+
+      <div class="graph-grid">
+        <div class="graph-card">
+          <img src="AtomicHabitsTrend.png" alt="Google Trends graph for Atomic Habits">
+          <h3>Atomic Habits</h3>
+          <p>Atomic Habits shows repeated spikes instead of one short viral moment.</p>
+        </div>
+
+        <div class="graph-card">
+          <img src="FourthWingTrend.png" alt="Google Trends graph for Fourth Wing">
+          <h3>Fourth Wing</h3>
+          <p>Fourth Wing shows a major spike around its release and hype period.</p>
+        </div>
+
+        <div class="graph-card">
+          <img src="TheHousemaidTrend.png" alt="Google Trends graph for The Housemaid">
+          <h3>The Housemaid</h3>
+          <p>The Housemaid stays low for a long time and then suddenly spikes.</p>
+        </div>
+
+        <div class="graph-card">
+          <img src="ItEndsWithUsTrend.png" alt="Google Trends graph for It Ends With Us">
+          <h3>It Ends With Us</h3>
+          <p>It Ends With Us shows one intense spike and then a quick drop.</p>
+        </div>
+
+        <div class="graph-card">
+          <img src="ACOTARTrend.png" alt="Google Trends graph for A Court of Thorns and Roses">
+          <h3>A Court of Thorns and Roses</h3>
+          <p>A Court of Thorns and Roses shows a longer buildup and then a major peak.</p>
+        </div>
+      </div>
+
+      <div class="callout-card">
+        <h3>Title takeaway</h3>
+        <p>
+          Social media does not affect every book in the same way. Some books stay visible over time,
+          some spike suddenly, and some become part of a larger genre or series trend.
+        </p>
+      </div>
+    </section>
+
+    <section class="dashboard-section">
+      <h2>4. What this data shows</h2>
+
+      <div class="mini-card-grid">
+  <div class="visual-card">
+    <div class="icon">📈</div>
+    <h3>BookTok grew over time</h3>
+    <p>Search interest in BookTok rises from 2021 to 2026, showing it became more mainstream.</p>
   </div>
-</section>
-    <section class="content-section genre-trends-section" id="genres-easier-to-trend-online">
-      <h3>Genres:</h3>
-      <p class="lead genre-trends-intro">Genres that are easier to trend online. Looking at genre search trends helped me see that BookTok is not only making individual books popular. It is also making certain kinds of books more visible. Romance, romantasy, fantasy, thrillers, and self-help books all show strong search interest over time. These genres work well online because they are easy to recommend quickly and usually create strong reactions, whether that is emotional romance, plot twists, fantasy worlds, or advice people can apply to their lives.</p>
-      <p class="citation-pill"><a href="https://trends.google.com" target="_blank" rel="noopener noreferrer">Source: Google Trends data collected for this project</a></p>
-      <div class="genre-graph-grid">
-        <figure class="genre-graph-card">
-          <div class="genre-graph-image">
-            <img src="RomantacyBooks.png" alt="Google Trends graph showing romantasy search interest over time">
-          </div>
-          <figcaption>This graph shows that search interest in romantasy stayed very low for years and then started rising quickly around 2023 and 2024. This matters because romantasy is one of the clearest genre trends connected to BookTok. The rise suggests that social media did not just make certain books popular, but helped make an entire genre more visible.</figcaption>
-        </figure>
-        <figure class="genre-graph-card">
-          <div class="genre-graph-image">
-            <img src="SelfHelpBooks.png" alt="Google Trends graph showing self-help book search interest over time">
-          </div>
-          <figcaption>Search interest for self-help books rises a lot toward 2025 and 2026. This connects to books like Atomic Habits because self-help ideas are easy to turn into short videos, quotes, and online advice content.</figcaption>
-        </figure>
-        <figure class="genre-graph-card">
-          <div class="genre-graph-image">
-            <img src="FantasyBooks.png" alt="Google Trends graph showing fantasy book search interest over time">
-          </div>
-          <figcaption>Fantasy books show steady interest with bigger spikes around 2024 and 2025. This connects to the rise of romantasy and fantasy series that became popular through BookTok reactions, fan communities, and recommendation videos.</figcaption>
-        </figure>
-        <figure class="genre-graph-card">
-          <div class="genre-graph-image">
-            <img src="ThrillerBooks.png" alt="Google Trends graph showing thriller book search interest over time">
-          </div>
-          <figcaption>Thriller books
+
+  <div class="visual-card">
+    <div class="icon">📚</div>
+    <h3>Genres trend differently</h3>
+    <p>Romance, romantasy, thrillers, fantasy, and self-help all show different patterns.</p>
+  </div>
+
+  <div class="visual-card">
+    <div class="icon">⏳</div>
+    <h3>Books have different timelines</h3>
+    <p>Some books spike quickly, some build slowly, and some stay visible for years.</p>
+  </div>
+</div>
+      <div class="callout-card">
+        <h3>Summary</h3>
+        <p>
+          Overall, this data helps me show that BookTok is not just popular in a general way.
+          Search interest changes over time, and different genres and books follow different patterns.
+          Google Trends does not prove exactly why people read certain books, but it helps show how online
+          attention connects to larger reading trends.
+        </p>
+      </div>
+    </section>
+
+    <section class="dashboard-section">
+      <h2>5. Limits of Google Trends</h2>
+
+      <div class="callout-card">
+        <p>
+          Google Trends is useful because it shows search interest over time, but it does not prove exactly
+          why someone searched for something or whether they actually read the book. A spike could come from
+          BookTok, a movie, a release date, controversy, publisher marketing, or multiple causes at once.
+          I am using the graphs as evidence of visibility and attention, not as perfect proof of cause and effect.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>
