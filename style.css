@@ -518,6 +518,26 @@ main.book-page {
 	margin-bottom: 0.25rem;
 }
 
+/* Trend type card covers: match book/author image styling and stay responsive */
+.trend-type-card img {
+	display: block;
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 10px;
+	margin-bottom: 0.75rem;
+	box-shadow: 0 8px 16px rgba(46, 58, 70, 0.08);
+}
+
+/* Container to position badge over the cover */
+.cover-figure {
+	position: relative;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+/* icon-badge removed per user preference */
+
 /* Focus face for specific author images */
 .face-focus {
 	object-position: center 32%;
@@ -687,6 +707,16 @@ main.book-page {
 		box-shadow: 0 6px 14px rgba(46, 58, 70, 0.04);
 		max-width: 100%;
 	}
+
+	/* Trend type card visuals */
+	.trend-type-card {
+		align-items: center;
+		text-align: center;
+	}
+
+	/* emoji badge styles removed */
+
+	.book-grid { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
 
 	.nav-links {
 		flex-wrap: wrap;
