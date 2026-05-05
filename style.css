@@ -124,6 +124,37 @@ body {
 	color: var(--blue-accent);
 }
 
+.hamburger {
+	display: none;
+	flex-direction: column;
+	gap: 0.5rem;
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 0.5rem;
+}
+
+.hamburger span {
+	display: block;
+	width: 1.8rem;
+	height: 0.25rem;
+	background-color: var(--text);
+	border-radius: 2px;
+	transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+	transform: rotate(45deg) translate(0.6rem, 0.6rem);
+}
+
+.hamburger.active span:nth-child(2) {
+	opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+	transform: rotate(-45deg) translate(0.5rem, -0.5rem);
+}
+
 main {
 	max-width: 960px;
 	margin: 0 auto;
@@ -201,7 +232,25 @@ main.book-page {
     text-align: left;
 }
 
+.hero h1,
+.hero h2 {
+	text-align: center;
+}
+
 .hero { text-align: center; }
+
+.dashboard-hero {
+	text-align: center;
+}
+
+.dashboard-hero h2 {
+	text-align: center;
+	margin-bottom: 0.75rem;
+}
+
+.dashboard-hero p {
+	text-align: center;
+}
 
 .hero p,
 .books-section p,
@@ -1003,11 +1052,117 @@ main.book-page {
 	margin-bottom: 0;
 }
 
+.research-hero {
+	text-align: center;
+}
+
+.research-grid,
+.process-grid,
+.findings-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	gap: 1rem;
+	margin-top: 1rem;
+}
+
+.research-card,
+.process-card {
+	background: linear-gradient(135deg, rgba(217, 236, 255, 0.5) 0%, rgba(255, 255, 255, 0.84) 100%);
+	border: 1px solid rgba(139, 188, 230, 0.28);
+	border-radius: 12px;
+	padding: 1.2rem;
+	box-shadow: 0 4px 10px rgba(46, 58, 70, 0.05);
+	display: grid;
+	gap: 0.7rem;
+	align-content: start;
+}
+
+.research-card h3,
+.process-card h3 {
+	margin-bottom: 0;
+	font-size: 1.15rem;
+	text-align: center;
+}
+
+.research-card p,
+.process-card p {
+	line-height: 1.75;
+	margin-bottom: 0;
+}
+
+.card-mark {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 2.25rem;
+	height: 2.25rem;
+	border-radius: 999px;
+	background: var(--blue-accent);
+	color: var(--white);
+	font-weight: 700;
+	box-shadow: 0 4px 10px rgba(139, 188, 230, 0.25);
+	margin: 0 auto;
+}
+
+.research-callout {
+	background: linear-gradient(135deg, rgba(139, 188, 230, 0.18) 0%, rgba(217, 236, 255, 0.75) 100%);
+	border: 1px solid rgba(139, 188, 230, 0.35);
+	border-radius: 12px;
+	padding: 1.2rem 1.25rem;
+	margin-top: 1rem;
+	box-shadow: 0 4px 10px rgba(46, 58, 70, 0.05);
+}
+
+.research-callout p {
+	margin-bottom: 0;
+	line-height: 1.75;
+	font-weight: 600;
+	text-align: center;
+}
+
+.thesis-callout p {
+	font-weight: 700;
+}
+
 @media (max-width: 700px) {
 	.navbar {
-		flex-direction: column;
+		flex-direction: row;
 		gap: 1rem;
 		padding: 1rem;
+		justify-content: space-between;
+	}
+
+	.hamburger {
+		display: flex;
+	}
+
+	.nav-links {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		background-color: var(--peach);
+		flex-direction: column;
+		gap: 0;
+		padding: 1rem;
+		border-bottom: 2px solid var(--blue-accent);
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.3s ease;
+	}
+
+	.nav-links.active {
+		max-height: 500px;
+	}
+
+	.nav-links li {
+		padding: 0.75rem 0;
+		border-bottom: 1px solid rgba(139, 188, 230, 0.2);
+	}
+
+	.nav-links li:last-child {
+		border-bottom: none;
 	}
 
 	.card {
@@ -1037,6 +1192,12 @@ main.book-page {
 	}
 
 	.popularity-cards {
+		grid-template-columns: 1fr;
+	}
+
+	.research-grid,
+	.process-grid,
+	.findings-grid {
 		grid-template-columns: 1fr;
 	}
 
@@ -1094,6 +1255,16 @@ main.book-page {
 	.book-grid {
 		grid-template-columns: 1fr;
 		gap: 1rem;
+	}
+
+	.dashboard-grid {
+		grid-template-columns: 1fr;
+		gap: 1rem;
+		margin-top: 1rem;
+	}
+
+	.dashboard-hero p {
+		font-size: 0.95rem;
 	}
 }
 
