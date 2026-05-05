@@ -2307,4 +2307,50 @@ body:has(.viral-grid) .hero-card p {
   font-size: 0.95rem;
   line-height: 1.5;
   text-align: center;
+
+/* Clickable card wrapper for home page "How to Read" section */
+.card-link-wrapper {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: flex-start;
+gap: 0.75rem;
+padding: 1.5rem;
+background: linear-gradient(135deg, rgba(217, 236, 255, 0.5) 0%, rgba(255, 255, 255, 0.85) 100%);
+border: 1.5px solid rgba(139, 188, 230, 0.3);
+border-radius: 16px;
+text-decoration: none;
+color: var(--text);
+cursor: pointer;
+transition: all 0.25s ease;
+box-shadow: 0 4px 12px rgba(139, 188, 230, 0.1);
+text-align: center;
+flex: 1 1 220px;
+max-width: 320px;
+min-height: 200px;
+}
+
+.card-link-wrapper:hover {
+transform: translateY(-6px);
+box-shadow: 0 8px 24px rgba(139, 188, 230, 0.2);
+border-color: rgba(139, 188, 230, 0.5);
+background: linear-gradient(135deg, rgba(139, 188, 230, 0.12) 0%, rgba(217, 236, 255, 0.6) 100%);
+}
+
+.card-link-wrapper .icon {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 2.5rem;
+height: 2.5rem;
+border-radius: 50%;
+background: var(--blue-acbackground: var(--blue-acbackground: var(--blue-acbackgrot: 700;
+box-shadow: 0 4px 12px rgba(139, 188, 230, 0.25);
+}
+
+.card-link-wrapper h3 {
+margin: 0.5rem 0 0.75rem;
+font-size: 1.1rem;
+color: var(--blue-color: var(--blue-color: var(--blue-color: var(--blue-color: var(--blue-color: var(--blue-cht: 1.6;
+color: var(--text);
 }
