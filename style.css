@@ -17,8 +17,8 @@ body {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	color: var(--text);
 	background-color: var(--light-peach);
-	line-height: 1.6;
-	font-size: 1rem;
+	line-height: 1.7;
+	font-size: 16px;
 }
 
 .navbar {
@@ -125,10 +125,21 @@ body {
 }
 
 main {
-	max-width: 1000px;
+	max-width: 960px;
 	margin: 0 auto;
-	padding: 2rem 1.5rem;
+	padding: 2.25rem 1.25rem;
 }
+
+/* Headings */
+h1, h2, h3 {
+	color: var(--blue-accent);
+	font-weight: 700;
+	line-height: 1.15;
+}
+
+h1 { font-size: 2rem; text-align: center; margin-bottom: 0.5rem; }
+h2 { font-size: 1.6rem; margin-bottom: 0.5rem; }
+h3 { font-size: 1.25rem; margin-bottom: 0.5rem; }
 
 main.book-page {
 	max-width: 760px;
@@ -138,7 +149,9 @@ main.book-page {
 .books-section,
 .trends,
 .about,
-.content-section {
+.content-section,
+.callout,
+.card {
 	background-color: var(--white);
 	border: 1px solid var(--light-blue);
 	border-radius: 12px;
@@ -164,19 +177,21 @@ main.book-page {
 .about h3,
 .content-section h2,
 .content-section h3 {
-	margin-bottom: 1rem;
-	font-size: 1.8rem;
-	color: var(--blue-accent);
-	font-weight: 700;
-	text-align: center;
+    margin-bottom: 1rem;
+    color: var(--blue-accent);
+    font-weight: 700;
+    text-align: left;
 }
+
+.hero { text-align: center; }
 
 .hero p,
 .books-section p,
 .trends p,
-.about p {
-	line-height: 1.8;
-	color: var(--text);
+.about p,
+.content-section p {
+    line-height: 1.85;
+    color: var(--text);
 }
 
 .books-section > p {
@@ -254,20 +269,19 @@ main.book-page {
 	gap: 1.5rem;
 	margin-top: 1.5rem;
 }
-
 .book-card {
 	background-color: var(--light-blue);
 	border-radius: 12px;
 	padding: 1rem;
-	box-shadow: 0 4px 6px rgba(139, 188, 230, 0.2);
-	transition: all 0.3s ease;
-	border: 1px solid rgba(139, 188, 230, 0.3);
+	box-shadow: 0 4px 6px rgba(139, 188, 230, 0.12);
+	transition: all 0.22s ease;
+	border: 1px solid rgba(139, 188, 230, 0.26);
 	height: 100%;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 0.15rem;
+	gap: 0.35rem;
 }
 
 .book-link:hover .book-card,
@@ -278,13 +292,13 @@ main.book-page {
 
 .book-card img {
 	display: block;
-	width: min(100%, 180px);
+	width: min(100%, 200px);
 	height: auto;
 	aspect-ratio: 320 / 440;
 	object-fit: cover;
 	border-radius: 10px;
 	margin: 0 auto 1rem;
-	box-shadow: 0 8px 16px rgba(46, 58, 70, 0.14);
+	box-shadow: 0 8px 16px rgba(46, 58, 70, 0.12);
 }
 
 .book-card h4 {
@@ -662,16 +676,16 @@ main.book-page {
 		padding: 1rem;
 	}
 
-	.brand {
-		justify-content: center;
-	}
-
-	.site-name {
-		font-size: 1.5rem;
-	}
-
-	.site-tagline {
-		text-align: center;
+	.card {
+		background: var(--white);
+		border: 1px solid rgba(139, 188, 230, 0.28);
+		border-radius: 12px;
+		padding: 1rem;
+		display: flex;
+		flex-direction: column;
+		gap: 0.75rem;
+		box-shadow: 0 6px 14px rgba(46, 58, 70, 0.04);
+		max-width: 100%;
 	}
 
 	.nav-links {
@@ -761,6 +775,16 @@ main.book-page {
 	color: var(--blue-accent);
 }
 
+.citation-pill {
+	display: inline-block;
+	font-size: 0.85rem;
+	color: #5d7382;
+	background: rgba(217,236,255,0.45);
+	padding: 0.25rem 0.6rem;
+	border-radius: 999px;
+	border: 1px solid rgba(139,188,230,0.25);
+}
+
 .lead {
 	color: var(--text);
 	font-weight: 600;
@@ -785,6 +809,81 @@ main.book-page {
 
 .card .read-more:hover {
 	text-decoration: underline;
+}
+
+.book-card .read-more {
+	display: inline-block;
+	margin-top: 0.6rem;
+	padding: 0.45rem 0.8rem;
+	background: #eaf7ff;
+	color: var(--blue-accent);
+	border-radius: 8px;
+	font-weight: 700;
+	text-decoration: none;
+	border: 1px solid rgba(139,188,230,0.4);
+}
+
+.book-card .read-more:hover { background: #d8f0ff; }
+
+.trend-note { font-size: 0.95rem; color: #516a7a; margin-top: 0.25rem; }
+
+/* About the Creator */
+.creator-section .creator-inner {
+	display: flex;
+	gap: 1.25rem;
+	align-items: center;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.creator-img {
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 50%;
+	box-shadow: 0 8px 18px rgba(46,58,70,0.12);
+	flex-shrink: 0;
+}
+
+.creator-bio h2 { margin-top: 0; }
+.creator-bio p { line-height: 1.7; margin-bottom: 0.6rem; color: var(--text); }
+
+@media (max-width: 700px) {
+	.creator-section .creator-inner { flex-direction: column; text-align: center; }
+	.creator-img { width: 180px; height: 180px; }
+}
+
+/* Make headings centered across the site to match the index page */
+h1, h2, h3 {
+	text-align: center;
+}
+
+.card h4,
+.book-card h4,
+.author-detail-card h4 {
+	text-align: center;
+}
+
+/* Center subheadings and bold text site-wide */
+h4, h5 {
+	text-align: center;
+}
+
+/* Make standalone bold inside paragraphs centered and block-level so it appears like a subheading */
+/* Only center standalone bold lines (strong/b when they are the only child of a paragraph) */
+p > strong:only-child, p > b:only-child {
+	display: block;
+	text-align: center;
+	font-weight: 700;
+}
+
+/* Center a few commonly bolded elements */
+.lead,
+.author,
+.site-tagline,
+.citation-pill {
+	text-align: center;
+	display: block;
 }
 
 /* Dashboard trend image */
