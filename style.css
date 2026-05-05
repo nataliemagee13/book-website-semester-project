@@ -1848,4 +1848,463 @@ p > strong:only-child, p > b:only-child {
 		grid-template-columns: 1fr;
 	}
 }
+/* Viral Types page cleanup */
+.viral-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2rem auto;
+}
 
+.viral-card {
+  background: #fff;
+  border: 2px solid #cfe9ff;
+  border-radius: 22px;
+  padding: 1.25rem;
+  max-width: 330px;
+  flex: 1 1 280px;
+  box-shadow: 0 8px 20px rgba(80, 140, 190, 0.08);
+  text-align: center;
+}
+
+.viral-card img {
+  width: 160px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 1rem;
+  box-shadow: 0 5px 14px rgba(0,0,0,0.12);
+}
+
+.viral-card h3 {
+  color: #8ec1ef;
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+.viral-card .example {
+  font-weight: 700;
+  color: #2f3a4a;
+  margin-bottom: 0.75rem;
+}
+
+.viral-card p {
+  text-align: left;
+  line-height: 1.55;
+}
+
+.takeaway-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2rem auto;
+}
+
+.takeaway-card {
+  background: #fff;
+  border: 2px solid #cfe9ff;
+  border-radius: 22px;
+  padding: 1.5rem;
+  max-width: 520px;
+  flex: 1 1 350px;
+  box-shadow: 0 8px 20px rgba(80, 140, 190, 0.08);
+}
+
+.takeaway-card h2 {
+  color: #8ec1ef;
+  text-align: center;
+  margin-top: 0;
+}
+
+@media (max-width: 768px) {
+  .viral-card {
+    max-width: 100%;
+  }
+
+  .viral-card img {
+    width: 140px;
+    height: 210px;
+  }
+}
+/* Dashboard feature card cleanup */
+.dashboard-feature {
+  max-width: 1100px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+}
+
+.dashboard-feature h2 {
+  text-align: center;
+  color: #8ec1ef;
+  font-size: 2.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.feature-card {
+  background: #ffffff;
+  border: 2px solid #d7ecff;
+  border-radius: 28px;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  box-shadow: 0 10px 28px rgba(70, 130, 180, 0.08);
+}
+
+.feature-image {
+  background: #f2f8ff;
+  border-radius: 22px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.feature-image img {
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  border-radius: 16px;
+  display: block;
+  margin: 0 auto;
+}
+
+.feature-text {
+  text-align: left;
+}
+
+.feature-text h3 {
+  color: #8ec1ef;
+  font-size: 2rem;
+  line-height: 1.15;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.feature-text p {
+  font-weight: 400;
+  line-height: 1.65;
+  font-size: 1.05rem;
+  color: #2f3a4a;
+}
+
+.text-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #8ec1ef;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+  .feature-card {
+    grid-template-columns: 1fr;
+    padding: 1.25rem;
+  }
+
+  .dashboard-feature h2,
+  .feature-text h3 {
+    text-align: center;
+  }
+
+  .feature-text {
+    text-align: center;
+  }
+
+  .feature-text p {
+    text-align: left;
+  }
+}/* Make BookTok interest section match the rest of dashboard */
+.dashboard-feature {
+  max-width: 760px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.dashboard-feature h2 {
+  text-align: center;
+  color: #8ec1ef;
+  font-size: 2.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.feature-card {
+  background: #ffffff;
+  border: 2px solid #d7ecff;
+  border-radius: 24px;
+  padding: 2rem;
+  display: block;
+  text-align: center;
+  box-shadow: 0 10px 24px rgba(80, 140, 190, 0.08);
+}
+
+.feature-image {
+  background: #f3f9ff;
+  border-radius: 20px;
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.feature-image img {
+  width: 100%;
+  max-width: 620px;
+  height: auto;
+  border-radius: 14px;
+  display: block;
+  margin: 0 auto;
+}
+
+.feature-text {
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.feature-text h3 {
+  color: #8ec1ef;
+  font-size: 2rem;
+  line-height: 1.15;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.feature-text p {
+  color: #2f3a4a;
+  font-weight: 400;
+  line-height: 1.65;
+  font-size: 1.05rem;
+  text-align: left;
+}
+
+.feature-text .text-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #8ec1ef;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.feature-text .text-link:hover {
+  text-decoration: underline;
+}/* Make BookTok Interest match the other dashboard sections */
+.dashboard-feature {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0;
+}
+
+.dashboard-feature h2 {
+  text-align: left;
+  color: #8ec1ef;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.feature-card {
+  max-width: 100%;
+  width: 100%;
+  background: #ffffff;
+  border: 2px solid #d7ecff;
+  border-radius: 22px;
+  padding: 2rem;
+  box-shadow: none;
+  text-align: center;
+}
+
+.feature-image {
+  max-width: 640px;
+  margin: 0 auto 1.5rem;
+  background: #f4f9ff;
+  border-radius: 18px;
+  padding: 1rem;
+}
+
+.feature-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+.feature-text {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.feature-text h3 {
+  color: #8ec1ef;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.feature-text p {
+  color: #2f3a4a;
+  font-weight: 400;
+  line-height: 1.65;
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 1rem;
+}
+
+.feature-text .text-link {
+  display: inline-block;
+  margin-top: 0.75rem;
+  color: #8ec1ef;
+  font-weight: 700;
+  text-decoration: none;
+}
+/* Center dashboard section headers */
+.dashboard-feature h2 {
+  text-align: center !important;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}.feature-text .text-link {
+  display: block;
+  text-align: center;
+  margin-top: 1.25rem;
+}/* Center all dashboard section headers */
+.dashboard-feature h2,
+.dashboard-section h2,
+.dashboard-section > h2 {
+  text-align: center !important;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}/* FINAL clean BookTok dashboard card */
+.dashboard-feature {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.booktok-card {
+  background: #ffffff;
+  border: 2px solid #d7ecff;
+  border-radius: 24px;
+  padding: 2.5rem;
+  text-align: center;
+  max-width: 850px;
+  margin: 0 auto;
+  box-shadow: 0 8px 22px rgba(80, 140, 190, 0.08);
+}
+
+.booktok-card h2 {
+  color: #8ec1ef;
+  font-size: 2rem;
+  margin: 0 0 1.5rem;
+  text-align: center;
+}
+
+.booktok-graph {
+  width: 100%;
+  max-width: 650px;
+  height: auto;
+  display: block;
+  margin: 0 auto 1.75rem;
+  border-radius: 14px;
+}
+
+.booktok-card h3 {
+  color: #8ec1ef;
+  font-size: 1.9rem;
+  line-height: 1.15;
+  margin: 0 0 1rem;
+  text-align: center;
+}
+
+.booktok-card p {
+  max-width: 680px;
+  margin: 0 auto 1.25rem;
+  line-height: 1.65;
+  font-weight: 400;
+  color: #2f3a4a;
+  text-align: center;
+}
+
+.booktok-card .text-link {
+  display: inline-block;
+  color: #8ec1ef;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.booktok-card .text-link:hover {
+  text-decoration: underline;
+}/* Center only the intro paragraph on viral-types.html */
+body:has(.viral-grid) .hero-card p {
+  text-align: center;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}/* Make “How Popularity Moves Now” cards sit side by side */
+.popularity-steps,
+.step-grid,
+.timeline-grid,
+.process-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1.5rem;
+  margin: 2rem auto;
+}
+
+.popularity-steps .step-card,
+.step-grid .step-card,
+.timeline-grid .step-card,
+.process-grid .step-card {
+  flex: 1 1 260px;
+  max-width: 320px;
+}/* Fix recommendation book cards and cover sizes */
+.recommendations-grid,
+.book-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2rem auto;
+  max-width: 1100px;
+}
+
+.recommendation-card,
+.book-card {
+  background: #ffffff;
+  border: 2px solid #d7ecff;
+  border-radius: 22px;
+  padding: 1.25rem;
+  max-width: 280px;
+  flex: 1 1 240px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(80, 140, 190, 0.08);
+}
+
+.recommendation-card img,
+.book-card img {
+  width: 150px !important;
+  height: 225px !important;
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
+  margin: 0 auto 1rem;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+.recommendation-card h3,
+.book-card h3 {
+  color: #8ec1ef;
+  font-size: 1.3rem;
+  margin: 0.75rem 0 0.4rem;
+}
+
+.recommendation-card p,
+.book-card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  text-align: center;
+}
